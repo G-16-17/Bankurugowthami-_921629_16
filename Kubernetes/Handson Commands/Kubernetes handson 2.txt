@@ -1,0 +1,85 @@
+Microsoft Windows [Version 10.0.19042.1165]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\ASUS>minikube start
+* minikube v1.23.0 on Microsoft Windows 10 Pro 10.0.19042 Build 19042
+* Using the docker driver based on existing profile
+
+X Exiting due to PROVIDER_DOCKER_NOT_RUNNING: deadline exceeded running "docker version --format -": exit status 1
+* Suggestion: Restart the Docker service
+* Documentation: https://minikube.sigs.k8s.io/docs/drivers/docker/
+
+
+C:\Users\ASUS>kubectl get pods
+NAME            READY   STATUS    RESTARTS   AGE
+greet-service   1/1     Running   0          88m
+
+C:\Users\ASUS>kubectl run greet-service --image mscc1/helloworld
+Error from server (AlreadyExists): pods "greet-service" already exists
+
+C:\Users\ASUS>kubectl port-forward greet-service 8080:8080
+Forwarding from 127.0.0.1:8080 -> 8080
+Forwarding from [::1]:8080 -> 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+Handling connection for 8080
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
